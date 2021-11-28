@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/aes.js"></script>
+    <script src="js/Extentions.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="convert-table">
-            <h1>online exchange rates converter</h1>
-            <div >
+            <h1>exchange rates converter</h1>
+            <div>
+                <label for="">Select currency from</label>
                 <select class="input-select-value" name="" id="convert-from">
-                    <option value="">fdscfds</option>
-                    <option value="">fdscfds</option>
+                    <option value="" selected disabled>Select rates</option>
                 </select>
-                <input class="input-select-value" id="selected-value" type="text" placeholder="Enter the value......" >
-                <select class="input-select-value" name="" id="convert-to"></select>    
+                <label for="">Enter amount of currency</label>
+                <input autofocus class="input-select" id="selected-value" type="text" placeholder="Enter the value......">
+                <label for="">Select currency to</label>
+                <select class="input-select-value" name="" id="convert-to">
+                    <option value="" selected disabled>Select rates</option>
+                </select>
             </div>
-            <button>SUBMIT</button>
-            <p>1 USD = 12 TL</p>
+            <button id="submit-button">SUBMIT</button>
+            <p id="result-text"></p>
+
+        </div>
+        <div class="convert-table online">
+            <div class="online_header">
+                <h1>online rates(TRY)</h1>
+                <span id="date-time" style="color: rgb(208, 255, 0); font-size: 1rem;"></span>
+            </div>
+            <div id="display">
+
+            </div>
+
 
         </div>
 
@@ -28,4 +49,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-image: url("img/image.jpg");
 
 }
@@ -17,9 +16,10 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
     width: 60vw;
     background-color: rgba(90, 8, 243, 0.6);
+    margin: 1rem;
 }
 h1{
     text-transform: uppercase;
@@ -45,6 +45,11 @@ button:hover{
     border: none;
     width: 20vw;
     display: flex;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 0, 85);
+    letter-spacing: 3px;
+
 }
 .input-select-value:focus{
     outline: 2px solid yellow;
@@ -53,4 +58,31 @@ button:hover{
 p{
     color: yellow;
     font-size: 2rem;
+}
+label{
+    margin-left: 3rem;
+    text-align: center;
+    color: yellow;
+}
+#selected-value{
+    margin: 1rem;
+    height: 2rem;
+    border: none;
+    width: 20vw;
+    display: flex;
+    text-align: center;
+    background-color: yellow;
+    outline: none;
+}
+.online{
+    justify-content:space-around;
+}
+.online li{
+    margin: 1rem;
+}
+.ul-list{
+    list-style-type: none;
+    color: yellow;
+    font-size: 2rem;
+    padding-bottom: 4rem;
 }
